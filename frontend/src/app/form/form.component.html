@@ -1,0 +1,23 @@
+<form #login="ngForm" (ngSubmit)="onSubmit()">
+  <label>Name 1: </label>
+  <input type="text" [(ngModel)]="name1" required name="name1" required />
+  <br />
+  <br />
+
+  <label>Name 2: </label>
+  <input type="text" [(ngModel)]="name2" name="name2" />
+  <br />
+  <br />
+
+  <label>Name 3: </label>
+  <input type="text" [(ngModel)]="name3" name="name3" />
+  <br />
+  <br />
+
+  <label>Name 4: </label>
+  <input type="text" [(ngModel)]="name4" name="name4" />
+  <br />
+  <br />
+
+  <button type="submit">Submit</button>
+</form>

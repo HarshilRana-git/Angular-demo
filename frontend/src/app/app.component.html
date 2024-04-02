@@ -1,0 +1,52 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarNav"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" (click)="homeactive()" routerLink="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="hometogg()" routerLink="/first">First</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="hometogg()" routerLink="/second">Second</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="hometogg()" routerLink="/form">Form</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="hometogg()" routerLink="/admin/adminlogin"
+          >Admin</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="hometogg()" routerLink="/admin/about"
+          >About</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="cont">
+  <router-outlet></router-outlet>
+  <div *ngIf="homestatus">HELLO FROM HOME</div>
+</div>
+
+<!-- <div>{{ data.name }}</div> -->
+
+<!-- <app-child
+  [item]="parentData"
+  (updateDataEvent)="updateData($event)"
+></app-child>
+
+<p>{{ 20 | newPipe : "USD" }}</p> -->

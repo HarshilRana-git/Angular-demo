@@ -1,0 +1,29 @@
+<br />
+<div>
+  <input type="text" [(ngModel)]="inptext" />
+</div>
+<br />
+
+<button (click)="getCounter(1)">++</button>
+<button (click)="getCounter(-1)">--</button>
+
+<div>
+  <label>Value is: {{ cval }}</label>
+</div>
+
+<div>
+  <label>Input is:{{ inptext }}</label>
+</div>
+
+<div>
+  <select [(ngModel)]="dropval" name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+  </select>
+</div>
+
+<div>
+  <label>Dropdown value is: {{ dropval }}</label>
+</div>
